@@ -1,6 +1,7 @@
 // import { Button, ButtonGroup } from "@chakra-ui/react"
 
 import { Grid, GridItem, Show } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
 
 function App() {
   //  return <Button colorScheme="blue">Click me</Button>
@@ -9,11 +10,11 @@ function App() {
       base:`"nav" "main"`,
       lg:`"nav nav" "aside main"`
     }}>
-      <GridItem area="nav" bg="coral" >
-        Nav
+      <GridItem area="nav"  >
+        <NavBar />
       </GridItem>
       {/* <Show >  */}
-      <GridItem area="aside" bg="gold" display={{ base: "none", lg: "block" }}>
+      <GridItem area="aside" bg="gold" >
         Aside
       </GridItem>
       {/* </Show> */}
